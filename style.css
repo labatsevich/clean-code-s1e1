@@ -50,11 +50,11 @@
 }
 
 .list-ite, .h3 {
-  list-style:none;
+  list-style: none;
 }
 
 .input,.btn{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -155,14 +155,14 @@
 
 /* Edit Task */
 .list .input-text {
-  display:none
+  display: none
 }
 
 .list .edit-mode .input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .list .edit-mode .label {
-  display:none;
+  display: none;
 }
