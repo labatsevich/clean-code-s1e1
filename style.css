@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.logo {
+.header__logo {
   width: 100%;
 }
 
-.more-inf {
+.header__info {
   font-family: fantasy, cursive;
 }
 
@@ -34,13 +34,13 @@
   margin: 0 auto 0;
 }
 
-.task {
+.task-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task-row {
   display: flex;
 }
 
@@ -49,8 +49,8 @@
   padding: 0;
 }
 
-.list-ite,
-.h3 {
+.list__item,
+.section__heading{
   list-style: none;
 }
 
@@ -74,8 +74,8 @@
 }
 
 /* Heading */
-.h3,
-.top-panel__label {
+.section__heading
+ {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@
   text-transform: uppercase;
 }
 
-.input-text {
+.input_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,21 +98,20 @@
   color: #888;
 }
 
-.input-text:focus {
+.input_text:focus {
   color: #333;
 }
 
 /* New Task */
-.top-panel__label {
-  display: block;
+.top__heading{
   margin: 0 0 20px;
 }
-.input#new-task {
+.new-task {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,30 +120,30 @@
   align-items: center;
 }
 
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.list-item > .input-checkbox {
+.list__item > .input_checkbox {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.list__item > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item > .input-text {
+.list__item > .input_text {
   width: 226px;
 }
 
-.btn.delete .btn-icon {
+.btn_delete .btn__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.delete .btn-icon:hover {
+.btn_delete .btn__icon:hover {
   transform: rotateZ(0);
 }
 
@@ -155,15 +154,16 @@
 }
 
 /* Edit Task */
-.list .input-text {
+.list .input_text,
+.list .edit-mode .label {
   display: none;
 }
 
-.list .edit-mode .input-text {
+.list .edit-mode .input_text {
   display: inline-block;
   width: 224px;
 }
 
-.list .edit-mode .label {
+/*.list .edit-mode .label {
   display: none;
-}
+}*/
