@@ -49,11 +49,13 @@
   padding: 0px;
 }
 
-.list-ite, .h3 {
+.list-ite,
+.h3 {
   list-style: none;
 }
 
-.input,.btn{
+.input,
+.btn{
   outline: none;
 }
 
