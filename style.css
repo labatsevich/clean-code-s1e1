@@ -138,6 +138,13 @@
   width: 226px;
 }
 
+.task-row .new-task,
+.list__item .task-label,
+.list__item .task-text{
+  display: inline-flex;
+  flex-grow: 1;
+}
+
 .btn_delete .btn__icon {
   height: 2em;
   transform: rotateZ(45deg);
